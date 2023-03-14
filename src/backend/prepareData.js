@@ -24,7 +24,7 @@ function filterValid(row) {
 }
 
 function removePunctuation(row) {
-    return row.replace(/[,?!:;.']/g, "")
+    return row.replace(/[,?!:;.'-~]/g, "")
 } 
 
 function removeTags(row){
