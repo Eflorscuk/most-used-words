@@ -24,11 +24,11 @@ function filterValid(row) {
 }
 
 function removePunctuation(row) {
-    return row.replace(/[,?!:;.'-~]/g, "")
+    return row.replace(/[,?!:;.-]/g,"")
 } 
 
 function removeTags(row){
-    return row.replace(/(<[^>]+)>/g, "").trim()
+    return row.replace(/(<[^>]+)>/g,"").trim()
 }
 
 function mergeRows(fullText, rowText) {
